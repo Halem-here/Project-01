@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  height: 100vh;
+  background: linear-gradient(to right, grey, white, grey);
+}
+
+.sign-up {
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(90deg, rgba(42, 123, 155, 1) 8%, rgba(87, 199, 133, 1) 45%, rgba(237, 221, 83, 1) 92%);
+  border-radius: 25px;
+  color: antiquewhite;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: large;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  position: relative;
+}
+
+.sign-up h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+  font-size: 40px;
+}
+
+.sign-up:hover {
+  height: 450px;
+  font-size: small;
+}
+
+.sign-up:hover h1 {
+  top: 30px;
+  transform: translateX(-50%);
+  font-size: 28px;
+}
+
+.form {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+  width: 100%;
+  margin-top: 90px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sign-up:hover .form {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: grey;
+  background-color: aliceblue;
+}
+
+.options {
+  font-size: 12px;
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  color: #fff;
+}
+
+.options a {
+  text-decoration: none;
+  color:  rgba(42, 123, 155, 1) ;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(87, 199, 133, 1);
+  color: black;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  animation: btn 1s ease-in infinite;
+}
+
+.btn:hover{
+  background-color:aliceblue;
+  color:black;
+}
+
+
+.registration {
+  font-size: 12px;
+  color: #fff;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.registration a {
+  color: rgba(42, 123, 155, 1);
+  text-decoration: none;
+}
